@@ -9,9 +9,9 @@ website color theme:
 body{
   background-color: #D8D6D7;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
   color: #C19892;
 }
 
