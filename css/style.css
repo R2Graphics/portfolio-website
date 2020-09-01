@@ -1,0 +1,104 @@
+/*
+website color theme:
+(Mauve) #c19892 or RGB 193, 152, 146
+(lightgrey) #d8d6d7 or RGB 216, 214, 215
+(White) #ffffff or RGB 242, 241, 239
+(Lightpink) #edd6d0 or RGB 237,214,208
+(Navy) #5e6171 or RGB 94,97,113
+
+new colors:
+grey #656668
+dark grey #424242
+coral #f16667
+white #ffffff
+*/
+body{
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+/*  font-weight: 300;*/
+  line-height: 1.6;
+  color: #656668;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #f16667
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img{
+  width: 100%;
+}
+
+a {
+  color: #656668;/*grey*/
+  text-decoration: none;
+}
+
+/*a:visited {
+  color: #656668; I dont want it to change color
+}*/
+
+a:hover,
+a:focus{
+  color: #f16667;/*coral*/
+  text-decoration: underline;
+}
+
+a:active {
+  color: #d8d6d7;/*lightgrey*/
+}
+
+.button {
+  display: inline-block;
+  background-color: #f16667;/*coral*/
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  color: #424242;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #f16667;
+  text-transform: uppercase;
+  border: 2px solid #f16667;
+}
+
+.button.contact:active {
+  background-color: #656668;
+  color: #ffffff;
+}
+
+.button.contact:hover {
+  background-color: #656668;
+  color: #ffffff;
+}
