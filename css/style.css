@@ -10,13 +10,43 @@ new colors:
 grey #656668
 dark grey #424242
 coral #f16667
+light coral #fce5e5
 white #ffffff
+
+font family: montserrat
+light 300
+light 300 italic
+regular 400
+regular 400 italic
+bold 700
+bold 700 italic
 */
-body{
+header {
+  background-color: #fce5e5;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 3px solid #f16667;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
+  -moz-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
+  box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
+  position: fixed;
+  width: 100%;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 450px;
+}
+
+body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-/*  font-weight: 300;*/
+  font-weight: 300;
   line-height: 1.6;
   color: #656668;
 }
@@ -24,16 +54,19 @@ body{
 h1, h2, h3, h4 {
   line-height: 1.4;
   text-transform: uppercase;
-  color: #f16667
+  color: #f16667;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -46,32 +79,33 @@ h4 {
   font-weight: 400;
 }
 
-img{
+img {
   width: 100%;
+  text-align: center;
 }
 
 a {
-  color: #656668;/*grey*/
+  color: #656668; /*grey*/
   text-decoration: none;
 }
 
-/*a:visited {
-  color: #656668; I dont want it to change color
-}*/
-
-a:hover,
-a:focus{
-  color: #f16667;/*coral*/
-  text-decoration: underline;
+a:visited {
+  color: #656668;
+}
+a:hover, a:focus {
+  opacity: 35;
+  color: #656668; /*grey*/
+  text-decoration: none;
 }
 
 a:active {
-  color: #d8d6d7;/*lightgrey*/
+  color: #d8d6d7; /*lightgrey*/
 }
 
 .button {
   display: inline-block;
-  background-color: #f16667;/*coral*/
+  background-color: #f16667;
+  /*coral*/
   color: #ffffff;
   font-weight: 500;
   padding: 10px;
@@ -80,9 +114,9 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   opacity: 0.8;
-  color: #424242;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -93,12 +127,99 @@ a:active {
   border: 2px solid #f16667;
 }
 
-.button.contact:active {
+.button.contact:hover, .button.contact:focus {
   background-color: #656668;
   color: #ffffff;
 }
 
-.button.contact:hover {
-  background-color: #656668;
-  color: #ffffff;
+.button.download {
+  display: block;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2.75em;
+}
+
+/* layout styling*/
+
+.container {
+  padding:0 15px;
+  max-width: 1200px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #f16667;
+  margin-bottom: 0;
+}
+
+#work .cookie.row {
+  border-bottom: none;
+}
+
+.logo{
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav > ul > li > a:visited {
+  color: #f16667;
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #fce5e5;
+  padding: 20px 0;
+  display: inline-block;
+  text-align: center;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: #fce5e5;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social > ul > li {
+  display: inline-block;
+}
+
+.social > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
