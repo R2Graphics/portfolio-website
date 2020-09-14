@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="about-page">
   <header>
 
     <div class="container">
@@ -35,10 +35,17 @@
   </header>
 
   <main>
-    <div class="section">
+    <div id="hero">
 
       <div class="container">
+
         <h1>About</h1>
+
+        <picture>
+          <source srcset="img/raizel_photo/raizel_photo_640.jpg" media="(max-width:767px)">
+          <img src="img/raizel_photo/raizel_photo_1200.jpg" alt="My Portrait">
+        </picture>
+
       </div>
 
     </div>
@@ -46,11 +53,6 @@
     <div class="section">
 
       <div class="container">
-
-        <picture>
-          <source srcset="img/raizel_photo/raizel_photo_640.jpg" media="(max-width:767px)">
-          <img src="img/raizel_photo/raizel_photo_1200.jpg" alt="My Portrait">
-        </picture>
 
         <div class="row">
 
@@ -85,7 +87,7 @@
             <h2>Skills and Tools</h2>
 
             <div class="row">
-              <div class="column">
+              <div class="col-md-6">
 
                 <h3>Relevant Skills</h3>
 
@@ -98,7 +100,7 @@
 
               </div>
 
-              <div class="column">
+              <div class="col-md-6">
 
                 <h3>Tools I Use</h3>
 
@@ -122,7 +124,7 @@
 
   </main>
 
-  <footer id="contact">
+  <footer>
 
     <div class="container">
       <h2>Get in Touch</h2>
@@ -140,17 +142,12 @@
         <a href="mailto:fake-email@gmail.com" class="button contact">Email me</a>
       </div>
 
+      <div class="social">
       <ul>
-
-        <li> <a href="https://www.instagram.com/rsquaredgraphics/" target="_blank"></a>
-          <i class="fab fa-instagram"></i>
-        </li>
-
-        <li> <a href="https://www.linkedin.cn/in/raizel-rosen-972018142/" target="_blank"></a>
-          <i class="fab fa-linkedin-in"></i>
-        </li>
-
+        <li> <a href="https://www.instagram.com/rsquaredgraphics/" class="fab fa-instagram icon" target="_blank"></a></li>
+        <li> <a href="https://www.linkedin.cn/in/raizel-rosen-972018142/" class="fab fa-linkedin-in icon" target="_blank"></a></li>
       </ul>
+    </div>
 
       <p>Copyright Raizel-Rosen 2020</p>
 
