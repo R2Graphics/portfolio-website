@@ -27,11 +27,13 @@ header {
   margin: 0 auto;
   border-bottom: 3px solid #f16667;
   text-align: center;
+  align-content: space-around;
   -webkit-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
   -moz-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
   box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
   position: fixed;
   width: 100%;
+  display: inline-block;
   }
 
 * {
@@ -39,7 +41,7 @@ header {
 }
 
 main {
-  padding-top: 450px;
+  padding-top: 158.51px;
 }
 
 body {
@@ -120,6 +122,10 @@ a:active {
   text-decoration: none;
 }
 
+.button:visited {
+
+}
+
 .button.contact {
   background-color: transparent;
   color: #f16667;
@@ -158,12 +164,12 @@ a:active {
   margin-bottom: 0;
 }
 
-#work .cookie.row {
+#work .animation.row {
   border-bottom: none;
 }
 
 .logo{
-  max-width: 250px;
+  max-width: 50px;
 }
 
 nav > ul {
@@ -176,7 +182,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -196,6 +202,10 @@ nav {
   padding: 20px 0;
   display: inline-block;
   text-align: center;
+}
+
+#hero span{
+  display: block;
 }
 
 #work h2 {
@@ -222,4 +232,100 @@ footer {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: center;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .logo {
+    float:left;
+  }
+
+  main {
+    padding-top: 111.75px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7{
+    width: 60%
+  }
+
+  .col-lg-5 {
+    width: 40%
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+}
+
+.berlin.illustration {
+  text-align: center;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
