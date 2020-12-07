@@ -23,10 +23,9 @@ bold 700 italic
 */
 header {
   background-color: #fce5e5;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 0 auto;
   border-bottom: 3px solid #f16667;
-  text-align: center;
   align-content: space-around;
   -webkit-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
   -moz-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
@@ -38,52 +37,6 @@ header {
 
 * {
   box-sizing: border-box;
-}
-
-main {
-  padding-top: 158.51px;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #656668;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.4;
-  text-transform: uppercase;
-  color: #f16667;
-}
-
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
-
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
-
-.hero.text {
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 img {
@@ -101,7 +54,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-  opacity: 35;
+  opacity: .35;
   color: #656668;
   /*grey*/
   text-decoration: underline;
@@ -152,6 +105,10 @@ a:active {
   text-align: center;
 }
 
+.container.email{
+  padding: 15px;
+}
+
 .icon {
   font-size: 2.75em;
 }
@@ -182,11 +139,9 @@ a:active {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 10px;
@@ -200,10 +155,84 @@ nav>ul>li>a:visited {
   text-decoration: none;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  text-align: right;
+  padding: 10px 0;
+  border-top: 1px solid #f16667;;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 91.95px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #656668;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #f16667;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+.hero.text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
 
 #hero {
   background-color: #fce5e5;
@@ -216,6 +245,10 @@ nav {
 }
 
 #work h2 {
+  text-align: center;
+}
+
+.container.about{
   text-align: center;
 }
 
@@ -250,6 +283,11 @@ footer {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+}
+
+.col-md-6.skills>ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .berlin.illustration {
@@ -303,6 +341,7 @@ footer {
 }
 
 @media only screen and (min-width: 640px) {
+
   header {
     text-align: center;
     padding: 20px 0 13px;
@@ -313,6 +352,23 @@ footer {
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
 
   .logo {
     float: left;
@@ -338,6 +394,10 @@ footer {
     width: 50%;
   }
 
+  .container.about{
+    text-align: left;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 10px;
@@ -352,9 +412,15 @@ footer {
   #about-page h3 {
     margin-top: 0;
   }
+
+  .col-md-6.skills>ul {
+    list-style-type: circle;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
+
   .col-lg-7 {
     width: 60%;
   }
@@ -371,9 +437,15 @@ footer {
 
   .container.about {
     max-width: 900px;
+    text-align: left;
   }
 
   ul {
     padding-inline-start: 10px;
   }
+
+    .col-md-6.skills>ul {
+      list-style-type: circle;
+    }
+
 }
