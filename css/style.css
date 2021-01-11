@@ -1,15 +1,9 @@
 /*
-website color theme:
-(Mauve) #c19892 or RGB 193, 152, 146
-(lightgrey) #d8d6d7 or RGB 216, 214, 215
-(White) #ffffff or RGB 242, 241, 239
-(Lightpink) #edd6d0 or RGB 237,214,208
-(Navy) #5e6171 or RGB 94,97,113
-
+website colors:
 new colors:
 grey #656668
 dark grey #424242
-coral #f16667
+coral #f16667 change to ef4c4d
 light coral #fce5e5
 white #ffffff
 
@@ -25,7 +19,7 @@ header {
   background-color: #fce5e5;
   padding: 10px 0 4px;
   margin: 0 auto;
-  border-bottom: 3px solid #f16667;
+  border-bottom: 3px solid #ef4c4d;
   align-content: space-around;
   -webkit-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
   -moz-box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.69);
@@ -67,7 +61,7 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #f16667;
+  background-color: #ef4c4d;
   /*coral*/
   color: #ffffff;
   font-weight: 500;
@@ -90,9 +84,9 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #f16667;
+  color: #ef4c4d;
   text-transform: uppercase;
-  border: 2px solid #f16667;
+  border: 2px solid #ef4c4d;
 }
 
 .button.contact:hover, .button.contact:focus {
@@ -105,7 +99,7 @@ a:active {
   text-align: center;
 }
 
-.container.email{
+.container.email {
   padding: 15px;
 }
 
@@ -124,7 +118,7 @@ a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 2px solid #f16667;
+  border-bottom: 2px solid #ef4c4d;
   margin-bottom: 0;
 }
 
@@ -142,7 +136,6 @@ nav>ul {
   margin: 0;
 }
 
-
 nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
@@ -151,7 +144,7 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited {
-  color: #f16667;
+  color: #ef4c4d;
   text-decoration: none;
 }
 
@@ -171,18 +164,19 @@ nav>ul>li>a:visited {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   text-align: right;
   padding: 10px 0;
-  border-top: 1px solid #f16667;;
+  border-top: 1px solid #ef4c4d;
+  ;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -202,7 +196,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
   text-transform: uppercase;
-  color: #f16667;
+  color: #ef4c4d;
 }
 
 h1 {
@@ -232,8 +226,6 @@ h4 {
   margin: 0 auto;
 }
 
-
-
 #hero {
   background-color: #fce5e5;
   padding: 20px 0;
@@ -248,7 +240,7 @@ h4 {
   text-align: center;
 }
 
-.container.about{
+.container.about {
   text-align: center;
 }
 
@@ -341,7 +333,6 @@ footer {
 }
 
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: center;
     padding: 20px 0 13px;
@@ -353,9 +344,9 @@ footer {
     margin-top: 4px;
   }
 
-  nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
   nav>ul>li {
     display: inline-block;
@@ -368,7 +359,6 @@ footer {
   .navtoggle li:last-child {
     display: none;
   }
-
 
   .logo {
     float: left;
@@ -394,7 +384,7 @@ footer {
     width: 50%;
   }
 
-  .container.about{
+  .container.about {
     text-align: left;
   }
 
@@ -416,11 +406,9 @@ footer {
   .col-md-6.skills>ul {
     list-style-type: circle;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
-
   .col-lg-7 {
     width: 60%;
   }
@@ -444,8 +432,7 @@ footer {
     padding-inline-start: 10px;
   }
 
-    .col-md-6.skills>ul {
-      list-style-type: circle;
-    }
-
+  .col-md-6.skills>ul {
+    list-style-type: circle;
+  }
 }
