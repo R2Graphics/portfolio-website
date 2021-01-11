@@ -42,6 +42,14 @@ a {
   text-decoration: underline;
 }
 
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ef4c4d; /* coral */
+}
+
 a:visited {
   color: #656668; /* grey */
 }
@@ -55,6 +63,12 @@ a:focus {
 
 a:active {
   color: #d8d6d7; /* lightgrey */
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social > ul {
@@ -73,20 +87,6 @@ a:active {
   text-decoration: none;
 }
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav > ul > li > a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: none;
-  color: #ef4c4d;
-}
-
 nav > ul > li > a:visited {
   color: #ef4c4d;
   text-decoration: none;
@@ -94,9 +94,7 @@ nav > ul > li > a:visited {
 
 .button {
   display: inline-block;
-  background-color: #ef4c4d;
-
-  /* coral */
+  background-color: #ef4c4d;  /* coral */
   color: #fff;
   font-weight: 500;
   padding: 10px;
@@ -287,6 +285,13 @@ footer {
   padding: 0 0 10px;
 }
 
+.picture.container {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -359,6 +364,10 @@ footer {
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .navtoggle.resposive li {
+    border-top: none;
   }
 
   .logo {
@@ -448,6 +457,6 @@ footer {
   }
 
   .navtoggle.responsive li {
-    border-top: 1px none;
+    border-top: none;
   }
 }
