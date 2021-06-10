@@ -224,11 +224,11 @@ h4 {
 }
 
 #hero h1 {
-  margin: 2em 0;
+  margin: 1em auto;
 }
 
 #hero h2 {
-  margin-bottom: 2em;
+  margin: 2em;
 }
 
 #work h2 {
