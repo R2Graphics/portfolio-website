@@ -210,7 +210,7 @@ h4 {
 
 .hero.text {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 #hero {
@@ -221,6 +221,14 @@ h4 {
 
 #hero span {
   display: block;
+}
+
+#hero h1 {
+  margin: 2em 0;
+}
+
+#hero h2 {
+  margin-bottom: 2em;
 }
 
 #work h2 {
